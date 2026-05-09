@@ -44,7 +44,3 @@ Le CSS est référencé avec un paramètre de version (`?v=N`) dans `index.html`
 - **Liens in-game** : les URLs `erepublik.com/en/...` peuvent changer. Vérifier périodiquement.
 - **Wayback Machine** : les liens du toggle pointent vers des recherches Wayback (`/web/AAAA*/`), pas des snapshots figés. Si Wayback restructure ses URLs, à mettre à jour.
 - **Discord/contact** : voir footer pour le contact mainteneur.
-
-## Crédits
-
-Site historique de la communauté eFrance du jeu eRepublik depuis 2008. Ressuscité en 2026 par [MarcDuplessisBack](https://www.erepublik.com/en/citizen/profile/9744825).
