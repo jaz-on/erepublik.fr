@@ -51,7 +51,7 @@ Créateurs historiques des sites de la communauté eFrance, identifiés depuis l
 
 | Site | Créateur / Plateforme | Source |
 |---|---|---|
-| **eRepublik.fr** (portail) | [CustMax](https://web.archive.org/web/2010*/custmax.eu) | Footer 2010 : « Créé par CustMax pour eRepublik.fr » |
+| **eRepublik.fr** (portail) | CustMax | Footer 2010 : « Créé par CustMax pour eRepublik.fr » |
 | **eBabyBoom** (erepublik.niouton.info) | **Niouton** | `<meta name="author" content="Niouton">` |
 | **education.erepublik.fr** (wiki) | Communauté eFrance, propulsé par MediaWiki | Aucun auteur unique identifié |
 | **forum.erepublik.fr** puis **forum.erepfrance.com** | Communauté eFrance, propulsé par phpBB | Forum communautaire, modéré par les administrateurs élus |
