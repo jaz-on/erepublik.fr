@@ -1,3 +1,10 @@
+/* ==========================================================================
+   eRepublik.fr — Feuille de style
+   Visuel fidèle à l'original (2008-2010), code modernisé.
+   ========================================================================== */
+
+/* --- Base ---------------------------------------------------------------- */
+
 body {
 	color: #7E7E7E;
 	font-family: Arial, Helvetica, sans-serif;
@@ -11,6 +18,19 @@ a {
 	font-weight: bold;
 }
 
+h1, h2, h3, h4 {
+	color: #3e739c;
+}
+
+/* H1 stylé comme l'ancien H3 pour préserver le visuel d'origine */
+h1 {
+	font-size: 1.17em;
+	font-weight: bold;
+	margin: 1em 0;
+}
+
+/* --- Layout principal ---------------------------------------------------- */
+
 #accueil {
 	width: 600px;
 	margin: auto;
@@ -20,9 +40,18 @@ a {
 	margin-left: 60px;
 }
 
-.ul {
-	margin-left: 20px;
+.banner {
+	position: relative;
+	left: -90px;
+	top: -20px;
+	border: 0;
 }
+
+.banner-bottom {
+	border: 0;
+}
+
+/* --- Liste de liens (style d'origine) ----------------------------------- */
 
 ul {
 	list-style: none;
@@ -47,22 +76,12 @@ li:hover {
 	font-size: 16px;
 }
 
-h1, h2, h3, h4 { color: #3e739c; }
-
-/* H1 stylé comme l'ancien H3 pour préserver le visuel d'origine */
-h1 {
-	font-size: 1.17em;
-	font-weight: bold;
-	margin: 1em 0;
+.ul {
+	margin-left: 20px;
 }
 
-#footer {
-	text-align: center;
-	font-size: 11px;
-	font-style: italic;
-}
+/* --- Toggle "À propos" (HTML5 <details>) -------------------------------- */
 
-/* Toggle (HTML5 <details>) — discret, fidèle au style */
 details.about {
 	max-width: 600px;
 	margin: 30px auto 0;
@@ -79,12 +98,13 @@ details.about summary {
 	list-style: none;
 }
 
-details.about summary::-webkit-details-marker { display: none; }
+details.about summary::-webkit-details-marker {
+	display: none;
+}
 
 details.about summary::before {
 	content: "▸ ";
 	display: inline-block;
-	transition: transform 0.15s;
 }
 
 details.about[open] summary::before {
@@ -121,4 +141,12 @@ details.about .archived {
 	font-size: 11px;
 	display: block;
 	margin-top: 2px;
+}
+
+/* --- Footer -------------------------------------------------------------- */
+
+#footer {
+	text-align: center;
+	font-size: 11px;
+	font-style: italic;
 }
