@@ -49,6 +49,13 @@ li:hover {
 
 h1, h2, h3, h4 { color: #3e739c; }
 
+/* H1 stylé comme l'ancien H3 pour préserver le visuel d'origine */
+h1 {
+	font-size: 1.17em;
+	font-weight: bold;
+	margin: 1em 0;
+}
+
 #footer {
 	text-align: center;
 	font-size: 11px;
