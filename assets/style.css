@@ -1,104 +1,165 @@
+:root {
+  --accent: #3e739c;
+  --accent-hover: #2c5476;
+  --text: #2d2d2d;
+  --text-soft: #6a6a6a;
+  --bg: #ffffff;
+  --bg-soft: #f6f8fa;
+  --border: #e1e4e8;
+  --max-width: 720px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #6fa8d3;
+    --accent-hover: #9cc5e3;
+    --text: #e8e8e8;
+    --text-soft: #a8a8a8;
+    --bg: #15191e;
+    --bg-soft: #1d2229;
+    --border: #2c333d;
+  }
+  .logo { filter: brightness(0.9); }
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
 body {
-	color:#7E7E7E;
-	font-family:Arial,Helvetica,sans-serif;
-	font-size:12px;
-	margin: auto;
-	}
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+}
 
 a {
-	color:#3E739C;
-	text-decoration:none;
-	font-weight: bold;
-	}
-
-#accueil {
-	width: 600px;
-	margin:auto;
-
-	}
-	
-.img-erep {
-	margin-left: 60px;
-	}
-	
-#chat {
-	display: none;
-	font-weight: bold;
-	}
-
-.ul {
-	margin-left: 20px;
-	}
-
-ul {
-    list-style: none;
-	margin-left: -20px;
-	max-width: 490px;
-	}
-	
-li {
-    font-weight: bold;
-    padding: 10px 10px 10px 20px;
-    border-top: 2px dotted #ccc;
-    color: #666;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
 }
 
-li:hover {
-	background-color: #eee;
-	}
-	
+a:hover { color: var(--accent-hover); text-decoration: underline; }
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 1rem 0 2rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2rem;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+h1 {
+  color: var(--accent);
+  font-size: 1.75rem;
+  margin: 0.5rem 0;
+}
+
+.tagline {
+  color: var(--text-soft);
+  font-size: 1rem;
+  margin: 0.5rem 0 0;
+}
+
+/* Sections */
+section {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  color: var(--accent);
+  font-size: 1.25rem;
+  margin: 0 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px dotted var(--border);
+}
+
+.about p {
+  margin: 0 0 1rem;
+}
+
+/* Listes de liens (style fidèle à l'original mais modernisé) */
+ul.links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.links li {
+  padding: 1rem 0;
+  border-top: 1px dotted var(--border);
+  color: var(--text-soft);
+}
+
+ul.links li:first-child { border-top: none; }
+
+ul.links li:hover {
+  background: var(--bg-soft);
+  margin: 0 -0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border-radius: 4px;
+  transition: background 0.15s ease;
+}
+
 .titre {
-	color: #3e739c;
-	font-size: 16px;
-	}
-
-h1, h2, h3, h4 { color: #3e739c; }
-	
-.leightbox {
-	background-color:white;
-	border:1em solid #B8B8B8;
-	color:#333333;
-	display:none;
-	height:50%;
-	left:25%;
-	overflow:auto;
-	padding:1em;
-	position:absolute;
-	text-align:left;
-	top:25%;
-	width:50%;
-	z-index:1001;
-}
-#overlay {
-	background-color:#333333;
-	display:none;
-	height:121%;
-	left:0;
-	opacity:0.8;
-	position:absolute;
-	top:0;
-	width:100%;
-	z-index:1000;
+  display: block;
+  color: var(--accent);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
 }
 
-#footer {
-	text-align: center;
-	font-size: 11px;
-	font-style: italic;
-	}
+.archived {
+  display: block;
+  font-size: 0.875rem;
+  font-style: italic;
+  color: var(--text-soft);
+}
 
-/*
-     FILE ARCHIVED ON 15:10:12 Sep 02, 2012 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 18:45:21 May 09, 2026.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+code {
+  background: var(--bg-soft);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+  font-size: 0.9em;
+  border: 1px solid var(--border);
+}
 
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  capture_cache.get: 0.317
-  load_resource: 258.167
-  PetaboxLoader3.resolve: 242.009
-  PetaboxLoader3.datanode: 14.837
-*/
+/* Footer */
+footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--text-soft);
+  border-top: 1px solid var(--border);
+}
+
+footer p { margin: 0.25rem 0; }
+
+footer .rescue { font-style: italic; }
+
+/* Responsive */
+@media (max-width: 480px) {
+  body { font-size: 15px; }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.15rem; }
+  main { padding: 1.5rem 1rem; }
+}
