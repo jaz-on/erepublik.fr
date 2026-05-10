@@ -147,6 +147,12 @@ details.about .archived {
 
 #footer {
 	text-align: center;
-	font-size: 11px;
+	font-size: 9px;
 	font-style: italic;
+	color: #aaa;
+}
+
+#footer a {
+	font-weight: normal;
+	color: #888;
 }
