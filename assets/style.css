@@ -40,15 +40,10 @@ h1 {
 	margin-left: 60px;
 }
 
-.banner {
-	position: relative;
-	left: -90px;
-	top: -20px;
-	border: 0;
-}
-
 .banner-bottom {
 	border: 0;
+	display: block;
+	margin: 0 auto;
 }
 
 /* --- Liste de liens (style d'origine) ----------------------------------- */
@@ -74,10 +69,6 @@ li:hover {
 .titre {
 	color: #3e739c;
 	font-size: 16px;
-}
-
-.ul {
-	margin-left: 20px;
 }
 
 /* --- Toggle "À propos" (HTML5 <details>) -------------------------------- */
@@ -150,6 +141,7 @@ details.about .archived {
 	font-size: 9px;
 	font-style: italic;
 	color: #aaa;
+	margin-top: 30px;
 }
 
 #footer a {
