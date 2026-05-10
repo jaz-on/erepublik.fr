@@ -19,10 +19,9 @@ Site statique d'une seule page, restauré en mai 2026 depuis les archives Waybac
 ├── robots.txt
 ├── sitemap.xml
 └── assets/
-    ├── style.css           Feuille de style (sections commentées)
-    ├── erepublik.jpg       Logo + favicon
-    ├── banner-erepublik.jpg
-    └── city rising sun 300x250.jpg
+    ├── style.css                       Feuille de style (sections commentées)
+    ├── erepublik.jpg                   Logo + favicon
+    └── erepublik-badge-300x250.png     Badge officiel eRepublik (bandeau bas)
 ```
 
 ## Déploiement
