@@ -9,7 +9,7 @@ Site statique d'une seule page, restauré en mai 2026 depuis les archives Waybac
 - HTML5 statique (pas de framework, pas de build)
 - CSS vanilla (fidèle au visuel d'origine 2008-2010)
 - Toggle "À propos" via `<details>` natif (aucun JavaScript)
-- [Matomo](https://mesure.jasonrouet.com/) pour les analytics
+- [Matomo](https://stats.jasonrouet.com/) pour les analytics
 
 ## Structure
 
