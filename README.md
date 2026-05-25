@@ -1,15 +1,24 @@
-# erepublik.fr
+<p align="center">
+  <img src="assets/erepublik.jpg" alt="eRepublik.fr" width="180">
+</p>
 
-Portail historique de la communauté française du jeu **eRepublik** (eFrance).
+<h1 align="center">eRepublik.fr</h1>
 
-Site statique d'une seule page, restauré en mai 2026 depuis les archives Wayback Machine, déployé sur [erepublik.fr](https://erepublik.fr/).
+<p align="center">
+  Portail historique de la communauté française du jeu <strong>eRepublik</strong> (eFrance).<br>
+  <a href="https://erepublik.fr/">erepublik.fr</a>
+</p>
+
+---
+
+Site statique d'une seule page, restauré en mai 2026 depuis les archives de la Wayback Machine.
 
 ## Stack
 
-- HTML5 statique (pas de framework, pas de build)
-- CSS vanilla (fidèle au visuel d'origine 2008-2010)
-- Toggle "À propos" via `<details>` natif (aucun JavaScript)
-- [Matomo](https://stats.jasonrouet.com/) pour les analytics
+- **HTML5 statique** — pas de framework, pas de build
+- **CSS vanilla** — fidèle au visuel d'origine (2008-2010)
+- **Toggle « À propos »** via `<details>` natif — aucun JavaScript
+- **[Matomo](https://stats.jasonrouet.com/)** pour les analytics
 
 ## Structure
 
@@ -26,7 +35,7 @@ Site statique d'une seule page, restauré en mai 2026 depuis les archives Waybac
 
 ## Déploiement
 
-Push sur la branche `main` → Plesk pull automatique via webhook → déploiement instantané sur `https://erepublik.fr/`.
+Push sur `main` → pull automatique par Plesk via webhook → déploiement instantané sur [erepublik.fr](https://erepublik.fr/).
 
 ```bash
 git add -A
@@ -34,19 +43,18 @@ git commit -m "..."
 git push
 ```
 
-## Cache busting
-
-Le CSS est référencé avec un paramètre de version (`?v=N`) dans `index.html`. **Penser à incrémenter ce numéro à chaque modification de `style.css`** pour contourner le cache Cloudflare (TTL de 7 jours).
+> [!IMPORTANT]
+> **Cache busting** — le CSS et le logo sont référencés avec un paramètre de version (`?v=N`) dans `index.html`. Incrémenter ce numéro à chaque modification de `style.css` ou du logo pour contourner le cache Cloudflare (TTL 7 jours).
 
 ## Maintenance
 
-- **Liens in-game** : les URLs `erepublik.com/en/...` peuvent changer. Vérifier périodiquement.
-- **Wayback Machine** : les liens du toggle pointent vers des recherches Wayback (`/web/AAAA*/`), pas des snapshots figés. Si Wayback restructure ses URLs, à mettre à jour.
-- **Discord/contact** : voir footer pour le contact mainteneur.
+- **Liens in-game** — les URLs `erepublik.com/en/...` peuvent changer ; vérifier périodiquement.
+- **Wayback Machine** — les liens du toggle pointent vers des recherches (`/web/AAAA*/`), pas des snapshots figés. À mettre à jour si Wayback restructure ses URLs.
+- **Contact** — voir le footer du site pour joindre le mainteneur.
 
 ## Crédits
 
-Créateurs historiques des sites de la communauté eFrance, identifiés depuis les archives Wayback Machine :
+Créateurs historiques des sites de la communauté eFrance, identifiés depuis la Wayback Machine :
 
 | Site | Créateur / Plateforme | Source |
 |---|---|---|
@@ -64,12 +72,12 @@ Recherche automatisée via [`tools/whois_history.sh`](tools/whois_history.sh).
 
 | Domaine | Première création AFNIC/Verisign | Statut actuel |
 |---|---|---|
-| **erepublik.fr** | **1999-10-18** (soit ~9 ans avant le lancement du jeu en 2007 — le créateur initial n'a sans doute aucun lien avec eRepublik) | Repris en mai 2026 par MarcDuplessisBack après expiration. Registrar : OVH. |
-| **erepfrance.com** | 2023-02-19 (date du squat après expiration du domaine d'origine) | Squatté. Registrar : Key-Systems GmbH. NS : NDSPLITTER.COM (parking/monétisation). |
+| **erepublik.fr** | **1999-10-18** (~9 ans avant le lancement du jeu en 2007 — le créateur initial n'a sans doute aucun lien avec eRepublik) | Repris en mai 2026 par MarcDuplessisBack après expiration. Registrar : OVH. |
+| **erepfrance.com** | 2023-02-19 (squat après expiration du domaine d'origine) | Squatté. Registrar : Key-Systems GmbH. NS : NDSPLITTER.COM (parking/monétisation). |
 
-**Identités masquées** : AFNIC (`.fr`) anonymise depuis 2011 — mention `ANO00-FRNIC` sur le whois mais « *While the registrar knows him/her* », OVH connaît l'identité historique. Pour `.com`, le RGPD (mai 2018) a généralisé le redacted.
+**Identités masquées** : l'AFNIC (`.fr`) anonymise depuis 2011 (mention `ANO00-FRNIC`, mais « *while the registrar knows him/her* » — OVH connaît l'identité historique). Pour `.com`, le RGPD (mai 2018) a généralisé le *redacted*.
 
-Pour reconstituer l'historique complet (succession des propriétaires, e-mails pré-RGPD), il faut une API payante :
+Pour reconstituer l'historique complet (succession des propriétaires, e-mails pré-RGPD), une API payante est nécessaire :
 
 ```bash
 export WHOISXML_API_KEY=ta_cle  # ~$2-5 par domaine
