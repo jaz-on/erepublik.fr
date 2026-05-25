@@ -37,7 +37,10 @@ h1 {
 }
 
 .img-erep {
-	margin-left: 60px;
+	display: block;
+	width: 320px;
+	height: auto;
+	margin: 0 auto;
 }
 
 .banner-bottom {
