@@ -62,6 +62,6 @@ Créateurs historiques des sites de la communauté eFrance, identifiés depuis l
 | **eBabyBoom** (erepublik.niouton.info) | **Niouton** | `<meta name="author" content="Niouton">` |
 | **education.erepublik.fr** (wiki) | Communauté eFrance, propulsé par MediaWiki | Aucun auteur unique identifié |
 | **forum.erepublik.fr** puis **forum.erepfrance.com** | Communauté eFrance, propulsé par phpBB | Forum communautaire, modéré par les administrateurs élus |
-| **portail.erepublik.fr** (blog) | Inconnu — à investiguer | — |
+| **portail.erepublik.fr** (blog) | mafleur24, Matthieu, **Niouton**, ocoben, ulysse — propulsé par WordPress | Auteurs listés dans les archives Wayback (blog WordPress 2.6.1) ; Niouton = créateur d'eBabyBoom |
 
 Si vous étiez impliqué dans la création ou l'administration de l'un de ces sites et souhaitez être crédité (ou rectifier une attribution), [DM sur Discord](https://discord.com/users/250288551562969089).
