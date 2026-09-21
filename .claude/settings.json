@@ -1,0 +1,18 @@
+{
+  "skillOverrides": {
+    "impeccable": "off"
+  },
+  "enabledPlugins": {},
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash /home/jaz/dev/jaz-on/erepublik.fr/.claude/hooks/session-banner.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
