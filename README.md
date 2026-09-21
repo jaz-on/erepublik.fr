@@ -52,6 +52,10 @@ git push
 - **Wayback Machine** — les liens du toggle pointent vers des recherches (`/web/AAAA*/`), pas des snapshots figés. À mettre à jour si Wayback restructure ses URLs.
 - **Contact** — voir le footer du site pour joindre le mainteneur.
 
+## Licence
+
+Le code (HTML/CSS) est sous licence [MIT](LICENSE). Les assets (logo, badge eRepublik) et les marques eRepublik restent la propriété de leurs ayants droit respectifs et ne sont pas couverts par cette licence.
+
 ## Crédits
 
 Créateurs historiques des sites de la communauté eFrance, identifiés depuis la Wayback Machine :
