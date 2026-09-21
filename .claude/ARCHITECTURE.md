@@ -19,7 +19,7 @@ How this repository is laid out and why.
     ├── CLAUDE.md
     ├── ARCHITECTURE.md                 Ce fichier
     ├── rules/                          Checklists bloquantes, toujours chargées
-    ├── hooks/                          session-banner.sh
+    ├── hooks/                          session-banner.sh, lint-edited.sh
     └── settings.json
 ```
 
