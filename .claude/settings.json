@@ -13,6 +13,17 @@
           }
         ]
       }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash /home/jaz/dev/jaz-on/erepublik.fr/.claude/hooks/lint-edited.sh"
+          }
+        ]
+      }
     ]
   }
 }
