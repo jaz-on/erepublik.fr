@@ -1,8 +1,8 @@
 # Changelog
 
-Une ligne par incrément de version `?v=N` sur `assets/style.css` et `assets/erepublik.jpg`, cf. la section Cache busting du README.
+Une ligne par incrément de version `?v=N` sur `assets/erepublik.jpg`, cf. la section Cache busting du README. Depuis 2026-09-29, le CSS est inliné dans `index.html` et n'est plus versionné ici.
 
-## style.css
+## style.css (historique, fichier supprimé)
 
 - **v10** — 2026-09-29 : site responsive (largeurs fluides, plus de marges négatives, cibles tactiles), contrastes et liens soulignés (accessibilité), `<main>`/`<footer>`, images dimensionnées (CLS).
 - **v9** — 2026-05-25 (`40d04a3`) : ajustements CSS accompagnant le remplacement du logo.

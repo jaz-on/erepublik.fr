@@ -28,7 +28,6 @@ Site statique d'une seule page, restauré en mai 2026 depuis les archives de la 
 ├── robots.txt
 ├── sitemap.xml
 └── assets/
-    ├── style.css                       Feuille de style (sections commentées)
     ├── erepublik.jpg                   Logo + favicon
     └── erepublik-badge-300x250.webp    Badge officiel eRepublik (bandeau bas)
 ```
@@ -44,7 +43,7 @@ git push
 ```
 
 > [!IMPORTANT]
-> **Cache busting** — le CSS et le logo sont référencés avec un paramètre de version (`?v=N`) dans `index.html`. Incrémenter ce numéro à chaque modification de `style.css` ou du logo pour contourner le cache Cloudflare (TTL 7 jours).
+> **Cache busting** — le CSS est inliné dans `index.html` (une requête bloquante en moins). Le logo est référencé avec un paramètre de version (`?v=N`) : incrémenter ce numéro à chaque modification de `assets/erepublik.jpg` pour contourner le cache Cloudflare (TTL 7 jours).
 
 ## Maintenance
 
