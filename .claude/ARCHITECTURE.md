@@ -10,7 +10,6 @@ How this repository is laid out and why.
 ├── robots.txt
 ├── sitemap.xml
 ├── assets/
-│   ├── style.css                       Feuille de style (sections commentées)
 │   ├── erepublik.jpg                   Logo + favicon
 │   └── erepublik-badge-300x250.webp    Badge officiel eRepublik (bandeau bas)
 ├── tools/
@@ -26,7 +25,7 @@ How this repository is laid out and why.
 ## Design constraints to preserve
 
 - Pas de JavaScript : le toggle « À propos » utilise `<details>` natif — volontaire, ne pas réintroduire de JS pour ça.
-- Cache busting manuel via `?v=N` sur `style.css` et le logo — voir `.claude/rules/cache-busting.md`.
+- CSS inliné dans `index.html` (`<style>`), cache busting manuel via `?v=N` sur le logo uniquement — voir `.claude/rules/cache-busting.md`.
 
 ## CI/CD
 
