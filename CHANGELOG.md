@@ -4,6 +4,7 @@ Une ligne par incrément de version `?v=N` sur `assets/style.css` et `assets/ere
 
 ## style.css
 
+- **v10** — 2026-09-29 : site responsive (largeurs fluides, plus de marges négatives, cibles tactiles), contrastes et liens soulignés (accessibilité), `<main>`/`<footer>`, images dimensionnées (CLS).
 - **v9** — 2026-05-25 (`40d04a3`) : ajustements CSS accompagnant le remplacement du logo.
 - **v8** — 2026-05-10 (`06eb5cc`) : nettoyage, retire `.banner`/`.ul`, remplace `<center>` déprécié, simplifie le footer.
 - **v7** — 2026-05-10 (`89695fe`) : footer plus discret, em dashes → tirets, accroche eRepublik.com.

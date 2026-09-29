@@ -30,7 +30,7 @@ Site statique d'une seule page, restauré en mai 2026 depuis les archives de la 
 └── assets/
     ├── style.css                       Feuille de style (sections commentées)
     ├── erepublik.jpg                   Logo + favicon
-    └── erepublik-badge-300x250.png     Badge officiel eRepublik (bandeau bas)
+    └── erepublik-badge-300x250.webp    Badge officiel eRepublik (bandeau bas)
 ```
 
 ## Déploiement

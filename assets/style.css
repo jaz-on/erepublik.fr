@@ -1,15 +1,18 @@
 /* ==========================================================================
    eRepublik.fr — Feuille de style
-   Visuel fidèle à l'original (2008-2010), code modernisé.
+   Visuel fidèle à l'original (2008-2010), code modernisé et responsive.
    ========================================================================== */
 
 /* --- Base ---------------------------------------------------------------- */
 
 body {
-	color: #7E7E7E;
+	color: #595959;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	margin: auto;
+	font-size: 14px;
+	line-height: 1.4;
+	margin: 0;
+	padding: 0 16px;
+	overflow-wrap: break-word;
 }
 
 a {
@@ -32,13 +35,14 @@ h1 {
 /* --- Layout principal ---------------------------------------------------- */
 
 #accueil {
-	width: 600px;
+	max-width: 600px;
 	margin: auto;
 }
 
 .img-erep {
 	display: block;
 	width: 320px;
+	max-width: 100%;
 	height: auto;
 	margin: 0 auto;
 }
@@ -46,6 +50,8 @@ h1 {
 .banner-bottom {
 	border: 0;
 	display: block;
+	max-width: 100%;
+	height: auto;
 	margin: 0 auto;
 }
 
@@ -53,16 +59,16 @@ h1 {
 
 ul {
 	list-style: none;
-	margin-left: -20px;
+	margin: 0;
 	max-width: 490px;
-	padding-left: 20px;
+	padding: 0;
 }
 
 li {
 	font-weight: bold;
 	padding: 10px 10px 10px 20px;
 	border-top: 2px dotted #ccc;
-	color: #666;
+	color: #595959;
 }
 
 li:hover {
@@ -71,7 +77,13 @@ li:hover {
 
 .titre {
 	color: #3e739c;
-	font-size: 16px;
+	font-size: 17px;
+}
+
+/* Cible tactile confortable (≥ 44 px de haut) */
+.titre a {
+	display: inline-block;
+	padding: 10px 0;
 }
 
 /* --- Toggle "À propos" (HTML5 <details>) -------------------------------- */
@@ -86,9 +98,9 @@ details.about {
 details.about summary {
 	color: #3e739c;
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 15px;
 	cursor: pointer;
-	padding: 5px 0;
+	padding: 12px 0;
 	list-style: none;
 }
 
@@ -111,13 +123,13 @@ details.about .content {
 
 details.about p {
 	margin: 0 0 10px;
-	color: #666;
+	color: #595959;
 	font-weight: normal;
 }
 
 details.about h4 {
 	margin: 15px 0 5px;
-	font-size: 13px;
+	font-size: 14px;
 }
 
 details.about ul {
@@ -130,24 +142,32 @@ details.about li {
 }
 
 details.about .archived {
-	color: #999;
+	color: #666;
 	font-style: italic;
-	font-size: 11px;
+	font-size: 12px;
 	display: block;
 	margin-top: 2px;
+}
+
+/* Liens dans du texte : distingués autrement que par la couleur */
+details.about p a,
+details.about .archived a,
+#footer a {
+	text-decoration: underline;
 }
 
 /* --- Footer -------------------------------------------------------------- */
 
 #footer {
+	max-width: 600px;
+	margin: 30px auto;
 	text-align: center;
-	font-size: 9px;
+	font-size: 12px;
 	font-style: italic;
-	color: #aaa;
-	margin-top: 30px;
+	color: #595959;
 }
 
 #footer a {
 	font-weight: normal;
-	color: #888;
+	color: #3E739C;
 }
