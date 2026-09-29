@@ -12,7 +12,7 @@ How this repository is laid out and why.
 ├── assets/
 │   ├── style.css                       Feuille de style (sections commentées)
 │   ├── erepublik.jpg                   Logo + favicon
-│   └── erepublik-badge-300x250.png     Badge officiel eRepublik (bandeau bas)
+│   └── erepublik-badge-300x250.webp    Badge officiel eRepublik (bandeau bas)
 ├── tools/
 │   └── whois-reports/                  Rapports whois, non versionnés (.gitignore)
 └── .claude/
