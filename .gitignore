@@ -1,2 +1,7 @@
 *.log
 tools/whois-reports/
+
+# Claude Code : config locale et worktrees d’agents (liens absolus propres à la machine, jamais portables)
+/.claude/settings.local.json
+/.claude/worktrees/
+/CLAUDE.local.md
