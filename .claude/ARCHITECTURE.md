@@ -18,7 +18,7 @@ How this repository is laid out and why.
     ├── CLAUDE.md
     ├── ARCHITECTURE.md                 Ce fichier
     ├── rules/                          Checklists bloquantes, toujours chargées
-    ├── hooks/                          session-banner.sh, lint-edited.sh
+    ├── guardrails.json                 Piloté par le plugin guardrails de jaz-ai (bannière)
     └── settings.json
 ```
 
